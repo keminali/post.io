@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>test</title>
+<!-- 2019-05-05 Sun 19:27 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="kaiming" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">test</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Pressure coefficient of a wing/blade</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Pressure coefficient of a wing/blade</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<b>Definitionn of pressure coefficient for a blade profile ( foil)</b>
+</p>
+\begin{equation}
+C_{pr} = 2(p- p_\infty)/(\rho U_{rel}^2)
+\end{equation}
+
+<ul class="org-ul">
+<li>P<sub>&infin;</sub> : free stream pressure
+</li>
+<li>U<sub>ref</sub> : relative seen by blade profile, unknown, you can use the following approximate:
+</li>
+</ul>
+
+\begin{equation}
+U_ref = U_\infty^2 + (\omega r)^2
+\end{equation}
+
+<p>
+<b>How to</b>
+</p>
+
+<p>
+input: fluent case, data files
+</p>
+
+<p>
+software: CFD-POST ansys, Matlab
+</p>
+
+<ol class="org-ol">
+<li>get pressure distrition on a blade profile ( such as 0.9R station) &#x2013; CFD-post
+a) open workbench, add fluent, import case and data files
+b) add cfd-post
+<ul class="org-ul">
+<li>use <b>Macro calculator</b>
+</li>
+</ul>
+<p>
+Tools &gt; Macro Calculator
+</p>
+</li>
+</ol>
+<p>
+<img src="figures/post/pressure/cp_polar_plot_cfd_post.png" alt="cp_polar_plot_cfd_post.png" />
+change y coordinate variable to <b>pressure</b> (default is pressure coefficient, C<sub>pr</sub>)
+the default C<sub>pr</sub> is not right, as 'velocity' defined in CFD-POST is 'relative velocity'
+you need to process it in Matlab
+</p>
+
+<p>
+output shuld look like:
+</p>
+<blockquote>
+<p>
+#X [ m ]    Pressure [ Pa ]
+0.0138593884    -125.609001
+0.0138394814    -126.603676
+0.0138003938    -128.664795
+</p>
+</blockquote>
+
+
+<ol class="org-ol">
+<li>pressure coefficient in Matlab
+</li>
+</ol>
+<p>
+delete header and comments of ascii files, 
+</p>
+
+<p>
+Before:
+</p>
+<blockquote>
+<p>
+#X [ m ]    Pressure [ Pa ]
+0.0138593884    -125.609001
+0.0138394814    -126.603676
+0.0138003938    -128.664795
+</p>
+</blockquote>
+
+<p>
+After:
+</p>
+<blockquote>
+<p>
+#X [ m ]    Pressure [ Pa ]
+0.0138593884    -125.609001
+0.0138394814    -126.603676
+0.0138003938    -128.664795
+</p>
+</blockquote>
+
+
+
+
+<p>
+a) <b>pressure<sub>coeff</sub>.m &#x2013; code for get pressure coefficient</b>
+</p>
+<pre class="example">
+function cp= pressure_coeff(p)
+% v : velocity
+% p :  pressure
+% p0 :   reference pressure
+% rho : density
+% omega: angular velocity, rad/s
+% r : radius
+  r=0.207;
+v = 0.6;
+p0=0;
+omega = 13.043;
+rho = 998.2;
+U = v^2 + (omega*r)^2;
+cp=2*(p-p0)/(rho*U)
+</pre>
+
+<p>
+b) To get a file with <b>pressure coefficient vs. x/c</b>, 
+use <b>Cpr.m</b> Matlab script to save you time
+</p>
+<pre class="example">
+% plot and save 'pressure coefficient vs. x/c'
+load pressure_9r_7.1m.out;
+pressure=pressure_9r_7_1m(:,2);
+x=pressure_9r_7_1m(:,1);
+x=x+0.0139;
+x_nor=x/0.0276;
+cp=pressure_coeff(pressure);  % user defined function
+plot(x_nor,cp);
+cp_x = [x_nor cp];
+save -ascii presure_coeff_7.1m.txt cp_x
+</pre>
+
+<p>
+<b>Plotting with Gnuplot</b>
+</p>
+<pre class="example">
+#set terminal jpeg
+#set output 'coeff_epp_gci.jpg'
+#set terminal png
+#set output 'pressure_tsr5.png'
+set terminal postscript eps font 24
+set out 'pressure_coeff_tsr5.eps'
+#set terminal x11
+set autoscale
+unset log
+unset label
+unset pm3d
+set key at graph .7, .4
+set key spacing 1
+set xtic auto
+set ytic auto
+set xlabel "x/c - Normalized chord length"
+set xrange [*:*]
+# r0 initial pulse
+set yrange [*:*]
+ 
+set ylabel "C_{pr} - Pressure coefficient"
+set style line 1 lt 1 lc rgb "black" lw 4 pointtype 6
+set style line 2 lt 2 lc rgb "black" lw 4 pointtype 2
+set style line 3 lt 3 lc rgb "black" lw 4
+set style line 4 lt 4 lc rgb "red" lw 4
+set style line 5 lt 5 lc rgb "black" lw 4
+set style line 6 lt 6 lc rgb "brown" lw 4
+set pointsize 2
+set bars 3
+plot "presure_coeff_3.3m.txt" using 1:2  t  "3.5M" ls 1 with lines,\
+"presure_coeff_5.4m.txt" using 1:2  t  "5.4M" ls 2 with lines,\
+"presure_coeff_7.1m.txt" using 1:2  t  "7.1M" ls 3 with lines
+</pre>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: kaiming</p>
+<p class="date">Created: 2019-05-05 Sun 19:27</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
